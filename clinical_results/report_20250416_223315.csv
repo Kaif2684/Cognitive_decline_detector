@@ -1,0 +1,5 @@
+file_path,name,age,gender,duration,transcription,speech_rate_lstm,pause_frequency,filler_density,lexical_diversity,anomia_score,syntax_errors,semantic_coherence,pronoun_ratio,acoustic_abnormality,cluster
+Audio_sample_1.wav,Patient1,66,Female,15.319115646258503,,-0.04088619351387024,86.16685391512094,0,0,0,0,0,0,12.158987,0
+Audio_sample_2.wav,Patient2,67,Male,40.28834467120181,,-0.08642066270112991,84.88807440243686,0,0,0,0,0,0,11.828715,0
+Audio_sample_3.wav,Patient3,68,Female,5.874458333333333,,-0.09136393666267395,153.20561470206474,0,0,0,0,0,0,8.569703,1
+Audio_sample_4.wav,Patient4,69,Male,19.989333333333335,,-0.05760635435581207,285.1520811099253,0,0,0,0,0,0,7.736571,1

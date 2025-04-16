@@ -1,0 +1,5 @@
+file_path,name,age,gender,duration,transcription,speech_rate_lstm,pause_frequency,filler_density,lexical_diversity,anomia_score,syntax_errors,acoustic_abnormality,semantic_coherence,pronoun_ratio,pca1,pca2,cluster,risk_score,risk_level,cognitive_profile
+Audio_sample_1.wav,Patient1,65,Male,15.319115646258503,,-0.08744464814662933,86.16685391512094,0,0,0,0,12.158987,0,0,-1.4159225059928395,-0.4153537420034688,2,0.0,,Significant cognitive concerns
+Audio_sample_2.wav,Patient2,70,Female,40.28834467120181,,-0.042664289474487305,84.88807440243686,0,0,0,0,11.828715,0,0,-1.378943170692464,1.518848065646668,0,0.0,,Normal speech patterns
+Audio_sample_3.wav,Patient3,68,Male,5.874458333333333,,-0.030598796904087067,153.20561470206474,0,0,0,0,8.569703,0,0,-0.07495229302028217,-1.5869232159813702,2,0.0,,Significant cognitive concerns
+Audio_sample_4.wav,Patient4,75,Female,19.989333333333335,,-0.13203558325767517,285.1520811099253,0,0,0,0,7.736571,0,0,2.8698179697055863,0.48342889233817143,1,99.999950000025,High,Mild cognitive markers

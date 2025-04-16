@@ -1,0 +1,56 @@
+MemoTag Speech Intelligence - Cognitive Analysis Report
+============================================================
+Date: April 16, 2025
+
+SUMMARY
+------------------------------------------------------------
+Total subjects analyzed: 4
+High risk subjects: 1 (25.0%)
+Medium risk subjects: 0 (0.0%)
+Low risk subjects: 0 (0.0%)
+
+KEY COGNITIVE INDICATORS
+------------------------------------------------------------
+mfcc_6_std: correlation = 0.994
+mfcc_12_std: correlation = 0.948
+pause_frequency: correlation = 0.941
+mfcc_12_mean: correlation = 0.881
+age: correlation = 0.872
+
+INDIVIDUAL ASSESSMENTS
+------------------------------------------------------------
+Subject: Patient4 (Age: 75, Gender: Female)
+Risk Score: 100.0/100 - High Risk
+Notable indicators:
+- High pause frequency: 285.2 pauses/min (normal <5)
+----------------------------------------
+
+Subject: Patient1 (Age: 65, Gender: Male)
+Risk Score: 0.0/100 - nan Risk
+Notable indicators:
+- High pause frequency: 86.2 pauses/min (normal <5)
+----------------------------------------
+
+Subject: Patient2 (Age: 70, Gender: Female)
+Risk Score: 0.0/100 - nan Risk
+Notable indicators:
+- High pause frequency: 84.9 pauses/min (normal <5)
+----------------------------------------
+
+Subject: Patient3 (Age: 68, Gender: Male)
+Risk Score: 0.0/100 - nan Risk
+Notable indicators:
+- High pause frequency: 153.2 pauses/min (normal <5)
+----------------------------------------
+
+RECOMMENDATIONS
+------------------------------------------------------------
+1. Clinical follow-up is recommended for subjects with High risk scores
+2. Consider additional speech tasks for Medium risk subjects
+3. Periodical reassessment (3-6 months) for all subjects to track changes
+
+LIMITATIONS
+------------------------------------------------------------
+This analysis is a screening tool and not a clinical diagnosis.
+Results should be interpreted by healthcare professionals in context of other assessments.
+Limited sample size may affect the reliability of the risk stratification.
