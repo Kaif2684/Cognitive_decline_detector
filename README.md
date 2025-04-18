@@ -15,11 +15,12 @@
 - clinical_results/cognitive_assessment.csv
 - Visualization plots (bar charts, heatmaps, feature graphs)
 
+
 ## 📂 Directory Structure
 
 cognitive-decline-detection/
 ├── assets/
-│   └── architecture_diagram.png         
+│   └── architecture_diagram.png
 ├── audio_bank/
 │   ├── Audio_sample_1.wav
 │   ├── Audio_sample_2.wav
@@ -41,13 +42,12 @@ cognitive-decline-detection/
 │   ├── metadata.json
 │   ├── model.json
 │   └── weights.bin
-├── api_main.py                          # API with FastAPI
-├── main.py                              # Main execution pipeline
-├── test1.py                             # Testing script
-├── LICENSE                              # MIT License
-├── README.md                            # Project documentation
-└── requirements.txt                     # Python dependencies
-
+├── api_main.py          # API with FastAPI
+├── main.py              # Main execution pipeline
+├── test1.py             # Testing script
+├── LICENSE              # MIT License
+├── README.md            # Project documentation
+└── requirements.txt     # Python dependencies
 
 ## 📑 License
 
