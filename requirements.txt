@@ -1,7 +1,14 @@
 fastapi
 uvicorn
-pandas
 numpy
-scikit-learn
+pandas
+matplotlib
+seaborn
 librosa
-python-multipart
+soundfile
+speechrecognition
+scikit-learn
+nltk
+torch
+transformers
+jinja2
