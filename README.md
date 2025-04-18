@@ -43,14 +43,13 @@ The system is built to generate **interactive HTML clinical reports** that combi
 
 ## 🖼 Sample Architecture
 
-> Add this image in your repo under `assets/architecture_diagram.png`
 
 ![Architecture Diagram](assets/architecture_diagram.png)
 
 
 ## 📸 Sample Report Screenshot
 
-> Add this image in your repo under `assets/sample_report_screenshot.png`
+
 
 ![Sample Report](assets/sample_report_screenshot.png)
 
