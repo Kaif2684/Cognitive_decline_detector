@@ -1,5 +1,7 @@
 fastapi
 uvicorn
-librosa
+pandas
 numpy
-soundfile
+scikit-learn
+librosa
+python-multipart
