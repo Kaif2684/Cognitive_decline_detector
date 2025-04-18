@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import librosa
-import librosa.display
 import soundfile as sf
 import speech_recognition as sr
 from sklearn.preprocessing import StandardScaler
@@ -12,12 +11,10 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 import os
 import warnings
-import json
 import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from collections import Counter
-import re
 import torch
 import torch.nn as nn
 from transformers import BertTokenizer, BertModel
@@ -59,6 +56,12 @@ class CognitiveDeclineDetector:
         
         # Initialize LSTM for temporal analysis
         self.lstm_model = SpeechLSTM(input_size=40, hidden_size=64, num_layers=2)
+        
+    def extract_features_and_predict(self, y, sr):
+        """Basic MFCC-based cognitive decline prediction"""
+        mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
+        mean_mfccs = np.mean(mfccs.T, axis=0).reshape(1, -1)
+        return "Possible cognitive decline" if mean_mfccs.mean() >= -10 else "No cognitive decline"
         
     def extract_mfcc_features(self, y, sr):
         """Extract MFCC features for CNN/LSTM analysis"""
@@ -106,6 +109,7 @@ class CognitiveDeclineDetector:
                 'gender': gender,
                 'duration': duration,
                 'transcription': "",
+                'mfcc_prediction': "",  # Added for basic MFCC prediction
                 # Core cognitive features
                 'speech_rate_lstm': 0,          # LSTM-based speech rate analysis
                 'pause_frequency': 0,            # HMM-style pause detection
@@ -120,6 +124,9 @@ class CognitiveDeclineDetector:
             
             # Extract advanced audio features
             try:
+                # Basic MFCC prediction
+                features['mfcc_prediction'] = self.extract_features_and_predict(y, sr)
+                
                 # MFCC features for CNN/LSTM analysis
                 mfcc_features = self.extract_mfcc_features(y, sr)
                 features['speech_rate_lstm'] = self.analyze_speech_rate_lstm(mfcc_features)
