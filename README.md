@@ -17,16 +17,36 @@
 
 ## 📂 Directory Structure
 
-
 cognitive-decline-detection/
-├── audio_bank/                # Input audio files
-├── clinical_results/          # Output reports and charts
-├── models/                    # Optional model checkpoints
-├── main.py                    # Main execution pipeline
-├── report_template.html       # Jinja2 HTML report template
-├── README.md                  # This file
-├── LICENSE                    # MIT License
-└── requirements.txt           # Python dependencies
+├── assets/
+│   └── architecture_diagram.png         
+├── audio_bank/
+│   ├── Audio_sample_1.wav
+│   ├── Audio_sample_2.wav
+│   ├── Audio_sample_3.wav
+│   ├── Audio_sample_4.wav
+│   └── test_audio.wav
+├── clinical_results/
+│   ├── clinical_report.html
+│   ├── cognitive_assessment.csv
+│   └── report_20250416_223315.csv
+├── cognitive_results/
+│   ├── cognitive_analysis_report.txt
+│   ├── cognitive_assessment.csv
+│   ├── feature_correlation.png
+│   ├── feature_importance.png
+│   ├── pca_visualization.png
+│   └── risk_distribution.png
+├── Supervised_model/
+│   ├── metadata.json
+│   ├── model.json
+│   └── weights.bin
+├── api_main.py                          # API with FastAPI
+├── main.py                              # Main execution pipeline
+├── test1.py                             # Testing script
+├── LICENSE                              # MIT License
+├── README.md                            # Project documentation
+└── requirements.txt                     # Python dependencies
 
 
 ## 📑 License
